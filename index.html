@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        Roger Ji's CSE 110 Lab 2 :D, This is my header element at the top
+        Roger Ji's CSE 110 Lab 2 :D, This is my header element at the top. Below is the navigation
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -26,7 +26,7 @@
     </header>
     <hr>
     <main>
-        <h1>Main content y'all</h1>
+        <h1>Main content y'all h1 size</h1>
         Below me is an empty canvas which I don't know how to draw on with javascript
         <br>
         <canvas width="300" height="100" style="border:1px solid black">
@@ -39,15 +39,16 @@
             <circle cx="100" cy="100" r="50" stroke="red" stroke-width="1" fill="blue" />
         </svg>
     </main>
-
+    <br>
+    Below is an example of me using the picture tag:
     <picture>
         <source media="(min-width:720px)" srcset="roger_ji_2.JPG">
         <img src="roger_ji_2.JPG" alt="me" height="200" width="200">
     </picture>
 
-    <h2> This is some medium size content</h2>
+    <h2> This is some h2 size content</h2>
     <br>
-    <h3> This is some smaller size content </h3>
+    <h3> This is some h3 size content </h3>
     <hr>
     <section>
 
@@ -55,7 +56,7 @@
         My favorite cat video:
         <br>
         <video src="cat.mp4" controls></video>
-        <p>
+
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae luctus neque.
         <aside style="padding-left:20px">
             <span style="background-color:lightgray"> Just some <b>random</b> filler text that uses the aside tag
@@ -63,24 +64,11 @@
         </aside>
         Aliquam ornare interdum lacus vitae maximus. Donec imperdiet sed nisi quis egestas. Aenean id purus cursus,
         porttitor odio.
-        </p>
         <br>
 
         My attempt at making a form:
 
         <form action="#">
-            <label for="numbers">Choose ur favorite number</label>
-            <select name="numbers" id="numbers">
-            <optgroup label="funny numbers">
-                <option value="69">69</option>
-                <option value="420">420</option>
-            </optgroup>
-            <optgroup label="normal numbers">
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </optgroup>
-            </select>
-            <br><br>
             <input type="submit" value="Submit">
 
             <fieldset>
@@ -92,27 +80,40 @@
                 <input type="email"><br><br>
 
                 <label for="number">fav number:</label>
-                <input type="number">
+                <input type="number"><br><br>
 
-                <label for="number">fav url:</label>
-                <input type="url">
+                <label for="numbers">Choose ur favorite funny number</label>
+                <select name="numbers" id="numbers">
+                <optgroup label="funny numbers">
+                    <option value="69">69</option>
+                    <option value="420">420</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="666">666</option>
+                    <option value="idk">idk something else</option>
+                </optgroup>
+                </select><br><br>
 
-                <label for="number">fav file:</label>
-                <input type="file">
+                <label for="url">fav url:</label>
+                <input type="url" id="url"><br><br>
 
-                <label for="number">fav color:</label>
-                <input type="color">
+                <label for="file">fav file:</label>
+                <input type="file" id="file"><br><br>
 
-                <label for="number">ur ssn:</label>
-                <input type="password">
+                <label for="color">fav color:</label>
+                <input type="color" id="color"><br><br>
 
-                <label for="number">fav time of day:</label>
-                <input type="time">
+                <label for="password">ur ssn:</label>
+                <input type="password" id="password"><br><br>
 
-                <label for="number">fav month:</label>
-                <input type="month">
+                <label for="time">fav time of day:</label>
+                <input type="time" id="time"><br><br>
+
+                <label for="month">fav month:</label>
+                <input type="month" id="month"><br><br>
 
                 <label for="age">Choose ur age range</label>
+                <input list="age" name="age" id="age">
                 <datalist id="age">
                     <option value="0-20">
                     <option value="21-40">
@@ -120,7 +121,8 @@
                     <option value="61-80">
                     <option value="80+">
                 </datalist>
-                <label for="w3review">Please enter ur other info:</label>
+
+                <label for="other">Please enter ur other info:</label>
                 <textarea id="other" name="other" rows="3" cols="40">
                 </textarea>
                </fieldset>
@@ -225,7 +227,7 @@
                     <p>CSE 132B, CSE 101, CSE 135, CSE 152A</p>
                     <button type="button" onclick="showTemplate()">Click Me to see plans for Fall 2021!</button>
                     <template>
-                        <p class="fa2021">CSE 120, CSE 107</p>
+                        <p id="fa2021">CSE 120, CSE 107</p>
                     </template>
               </details>
         </div>
@@ -237,7 +239,7 @@
 
     <script>
         function showTemplate() {
-          document.body.appendChild(document.getElementsByTagName("template")[0].content.cloneNode(true));
+          document.getElementById("fa2021").appendChild(document.getElementsByTagName("template")[0].content.cloneNode(true));
         }
         </script>
 </body>
