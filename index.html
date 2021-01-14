@@ -41,6 +41,7 @@
     </main>
     <br>
     Below is an example of me using the picture tag:
+    <br>
     <picture>
         <source media="(min-width:720px)" srcset="roger_ji_2.JPG">
         <img src="roger_ji_2.JPG" alt="me" height="200" width="200">
@@ -56,7 +57,7 @@
         My favorite cat video:
         <br>
         <video src="cat.mp4" controls></video>
-
+        <br><br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae luctus neque.
         <aside style="padding-left:20px">
             <span style="background-color:lightgray"> Just some <b>random</b> filler text that uses the aside tag
@@ -65,7 +66,7 @@
         Aliquam ornare interdum lacus vitae maximus. Donec imperdiet sed nisi quis egestas. Aenean id purus cursus,
         porttitor odio.
         <br>
-
+        <hr>
         My attempt at making a form:
 
         <form action="#">
@@ -74,13 +75,13 @@
             <fieldset>
                 <legend>Enter ur information:</legend>
                 <label for="name">Full name:</label>
-                <input type="text"><br><br>
+                <input type="text" id="name"><br><br>
 
                 <label for="email">Email:</label>
-                <input type="email"><br><br>
+                <input type="email" id="email"><br><br>
 
                 <label for="number">fav number:</label>
-                <input type="number"><br><br>
+                <input type="number" id="number"><br><br>
 
                 <label for="numbers">Choose ur favorite funny number</label>
                 <select name="numbers" id="numbers">
@@ -112,15 +113,16 @@
                 <label for="month">fav month:</label>
                 <input type="month" id="month"><br><br>
 
-                <label for="age">Choose ur age range</label>
-                <input list="age" name="age" id="age">
-                <datalist id="age">
+                <label for="age">Choose your age range</label>
+                    <input list="ages" name="age" id="age">
+
+                    <datalist id="ages">
                     <option value="0-20">
                     <option value="21-40">
                     <option value="41-60">
                     <option value="61-80">
                     <option value="80+">
-                </datalist>
+                    </datalist>
 
                 <label for="other">Please enter ur other info:</label>
                 <textarea id="other" name="other" rows="3" cols="40">
@@ -225,9 +227,10 @@
             <details>
                 <summary>My class plans for Spring 2021</summary>
                     <p>CSE 132B, CSE 101, CSE 135, CSE 152A</p>
+                    <p id="fa2021">CSE 120, CSE 107</p>
                     <button type="button" onclick="showTemplate()">Click Me to see plans for Fall 2021!</button>
                     <template>
-                        <p id="fa2021">CSE 120, CSE 107</p>
+                        <p>CSE 120, CSE 107</p>
                     </template>
               </details>
         </div>
