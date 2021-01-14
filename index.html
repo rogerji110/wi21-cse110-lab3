@@ -1,104 +1,179 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <title>
-            CSE 110 Lab 2 Roger Ji
-        </title>
-        <meta charset="UTF-8">
-        <meta name="description" content="CSE 110 Lab 2 Roger Ji">
-        <meta name="keywords" content="CSE 110 Lab 2 Roger Ji">
-        <meta name="author" content="Roger Ji">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            Roger Ji's CSE 110 Lab 2 :D, This is my header element at the top
-            <nav>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">A dummy link</a></li>
-                  <li><a href="#">Another dummy link</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1>Main content y'all</h1>
-            Below me is an empty canvas which I don't know how to draw on with javascript
-            <canvas width="300", height="300", style="border:1px solid black">
 
-            </canvas>
-        </main>
+<head>
+    <title>
+        CSE 110 Lab 2 Roger Ji
+    </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSE 110 Lab 2 Roger Ji">
+    <meta name="keywords" content="CSE 110 Lab 2 Roger Ji">
+    <meta name="author" content="Roger Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-        <picture>
-            <source media="(min-width:720px)" srcset="roger_ji_2.jpg">
-                Me again
-          </picture>
-
-        <h2> This is some medium size content</h2>
+<body>
+    <header>
+        Roger Ji's CSE 110 Lab 2 :D, This is my header element at the top
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">A dummy link</a></li>
+                <li><a href="#">Another dummy link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h1>Main content y'all</h1>
+        Below me is an empty canvas which I don't know how to draw on with javascript
         <br>
-        <h3> This is some smaller size content </h3>
-        <section>
+        <canvas width="300" height="100" style="border:1px solid black">
+        </canvas>
 
-            <h2>Section 1</h2>
-            My favorite cat video:
-            <video src="https://www.youtube.com/watch?v=Oyx3xkdi4uw"></video>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae luctus neque. 
-                <aside style="padding-left:20px">
-                    <span style="background-color:grey"> Just some <b>random</b> lorem ipsum filler text</span>
-                </aside>
-                Aliquam ornare interdum lacus vitae maximus. Donec imperdiet sed nisi quis egestas. Aenean id purus cursus, porttitor odio.
-            </p>
-        </section>
-        <hr>
-        <section>
-            <h2>Section 2 </h2>
-            <figure>
-                <img src="Roger_Ji.png" alt="Roger headshot" style="width:10%">
-                <figcaption>That's me</figcaption>
-              </figure>
-            <div>
+        <br>
+        Below is my attempt at using svg to draw something:
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="50" stroke="red" stroke-width="1" fill="blue" />
+        </svg>
+    </main>
 
-                Some <i>random</i> things about me:
-                <ol>
-                    <li>
-                        I have 3 pets (2 dogs and a cat)
-                    </li>
-                    <li>
-                        I'm from the <em>Bay Area</em>
-                    </li>
-                    <li>
-                        I can speak 3 languages
-                    </li>
-                    <li>
-                        My favorite piece of code is <code> rm -rf / </code>
-                    </li>
-                    <li>
-                        My favorite HTML tag is the <code> pre </code> tag:
-                        <pre>
+    <picture>
+        <source media="(min-width:720px)" srcset="roger_ji_2.JPG">
+        <img src="roger_ji_2.JPG" alt="me">
+    </picture>
+
+    <h2> This is some medium size content</h2>
+    <br>
+    <h3> This is some smaller size content </h3>
+    <hr>
+    <section>
+
+        <h2>Section 1</h2>
+        My favorite cat video:
+        <video src="https://www.youtube.com/watch?v=Oyx3xkdi4uw" controls></video>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae luctus neque.
+        <aside style="padding-left:20px">
+            <span style="background-color:lightgray"> Just some <b>random</b> filler text that uses the aside tag
+                :)</span>
+        </aside>
+        Aliquam ornare interdum lacus vitae maximus. Donec imperdiet sed nisi quis egestas. Aenean id purus cursus,
+        porttitor odio.
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h2>Section 2 </h2>
+        <figure>
+            <img src="Roger_Ji.png" alt="Roger headshot" style="width:10%">
+            <figcaption>That's me</figcaption>
+        </figure>
+        <div>
+            This is my new div
+            Some <i>random</i> things about me:
+            <ol>
+                <li>
+                    I have 3 pets (2 dogs and a cat)
+                </li>
+                <li>
+                    I'm from the <em>Bay Area</em>
+                </li>
+                <li>
+                    I can speak 3 languages
+                </li>
+                <li>
+                    My favorite piece of code is <code> rm -rf / </code>
+                </li>
+                <li>
+                    My favorite HTML tag is the <code> pre </code> tag:
+                    <pre>
                             wooo        loook its preformatted           !!!!!!
 
 
                             mag      ic
                         </pre>
-                    </li>
-                    <li>
-                        I have another site you can peek here:
-                        <iframe src="rogerji.me" title="other website"></iframe>
-                    </li>
-                    <li>
-                        My favorite piece of classical music is Serenade by Schubert:
-                        <audio controls>
-                            <source src="serenade.mp3" type="audio/mp3">
-                            Oops pls have mp3 kthx
-                          </audio> 
-                    </li>
-                </ol>
+                </li>
+                <li>
+                    I have another site you can peek here:
+                    <br>
+                    <iframe src="https://rogerji.me" title="other website" height="500" width="500"></iframe>
+                </li>
+                <li>
+                    My favorite piece of classical music is Serenade by Schubert:
+                    <br>
+                    <audio controls>
+                        <source src="serenade.mp3" type="audio/mp3">
+                        Oops pls have mp3 kthx
+                    </audio>
+                </li>
+            </ol>
 
-            </div>
-        </section>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3> Below you can find all the classes I've taken so far</h3>
+            <table>
+                <caption> Coursework so far</caption>
+                <colgroup>
+                    <col span="1" style="background-color:lightgreen">
+                    <col style="background-color:lightpink">
+                </colgroup>
+                <tr>
+                    <th>Quarter</th>
+                    <th>Classes</th>
+                </tr>
+                <tr>
+                    <td>Winter 2021</td>
+                    <td>CSE 110, Math 183, CSE 132A</td>
+                </tr>
+                <tr>
+                    <td>Fall 2020</td>
+                    <td>CSE 100, MGT 166, MGT 172, POLI 113A</td>
+                </tr>
+                <tr>
+                    <td>SS2 2020</td>
+                    <td>CSE 141, CSE 141L, ANSC 166, CSE 197</td>
+                </tr>
+                <tr>
+                    <td>SS1 2020</td>
+                    <td>CSE 140, CSE 140L, MATH 18</td>
+                </tr>
+                <tr>
+                    <td>Spring 2020</td>
+                    <td>CSE 30, CSE 105, DOC 3, MATH 20C, CSE 198</td>
+                </tr>
+                <tr>
+                    <td>Winter 2020</td>
+                    <td>CSE 21, CSE 12, CSE 15L, CSE 198, DOC 2</td>
+                </tr>
+                <tr>
+                    <td>Fall 2019</td>
+                    <td>CSE 11, CSE 20, DOC 1, MUS 4</td>
+                </tr>
+            </table>
+            <details>
+                <summary>My class plans for Spring 2021</summary>
+                    <p>CSE 132B, CSE 101, CSE 135, CSE 152A</p>
+                    <button type="button" onclick="showTemplate()">Click Me to see plans for Fall 2021!</button>
+                    <template>
+                        <p class="fa2021">CSE 120, CSE 107</p>
+                    </template>
+              </details>
+        </div>
+    </section>
 
-        <footer style="margin-bottom:0px">
-            <p>Reach my email at <a href="mailto:roji@ucsd.edu">roji@ucsd.edu</a></p>
-          </footer>
-    </body>
+    <footer style="margin-bottom:0px">
+        <p>Reach my email at <a href="mailto:roji@ucsd.edu">roji@ucsd.edu</a></p>
+    </footer>
+
+    <script>
+        function showContent() {
+          document.body.appendChild(document.getElementsByTagName("template")[0].content.cloneNode(true));
+        }
+        </script>
+</body>
+
 </html>
