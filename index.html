@@ -34,6 +34,7 @@
 
         <br>
         Below is my attempt at using svg to draw something:
+        <br>
         <svg width="200" height="200">
             <circle cx="100" cy="100" r="50" stroke="red" stroke-width="1" fill="blue" />
         </svg>
@@ -41,7 +42,7 @@
 
     <picture>
         <source media="(min-width:720px)" srcset="roger_ji_2.JPG">
-        <img src="roger_ji_2.JPG" alt="me">
+        <img src="roger_ji_2.JPG" alt="me" height="200" width="200">
     </picture>
 
     <h2> This is some medium size content</h2>
@@ -52,7 +53,8 @@
 
         <h2>Section 1</h2>
         My favorite cat video:
-        <video src="https://www.youtube.com/watch?v=Oyx3xkdi4uw" controls></video>
+        <br>
+        <video src="cat.mp4" controls></video>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae luctus neque.
         <aside style="padding-left:20px">
@@ -62,6 +64,70 @@
         Aliquam ornare interdum lacus vitae maximus. Donec imperdiet sed nisi quis egestas. Aenean id purus cursus,
         porttitor odio.
         </p>
+        <br>
+
+        My attempt at making a form:
+
+        <form action="#">
+            <label for="numbers">Choose ur favorite number</label>
+            <select name="numbers" id="numbers">
+            <optgroup label="funny numbers">
+                <option value="69">69</option>
+                <option value="420">420</option>
+            </optgroup>
+            <optgroup label="normal numbers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </optgroup>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+
+            <fieldset>
+                <legend>Enter ur information:</legend>
+                <label for="name">Full name:</label>
+                <input type="text"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email"><br><br>
+
+                <label for="number">fav number:</label>
+                <input type="number">
+
+                <label for="number">fav url:</label>
+                <input type="url">
+
+                <label for="number">fav file:</label>
+                <input type="file">
+
+                <label for="number">fav color:</label>
+                <input type="color">
+
+                <label for="number">ur ssn:</label>
+                <input type="password">
+
+                <label for="number">fav time of day:</label>
+                <input type="time">
+
+                <label for="number">fav month:</label>
+                <input type="month">
+
+                <label for="age">Choose ur age range</label>
+                <datalist id="age">
+                    <option value="0-20">
+                    <option value="21-40">
+                    <option value="41-60">
+                    <option value="61-80">
+                    <option value="80+">
+                </datalist>
+                <label for="w3review">Please enter ur other info:</label>
+                <textarea id="other" name="other" rows="3" cols="40">
+                </textarea>
+               </fieldset>
+
+               <input type="submit" value="Submit">
+        </form>
+        
     </section>
     <hr>
     <section>
@@ -170,7 +236,7 @@
     </footer>
 
     <script>
-        function showContent() {
+        function showTemplate() {
           document.body.appendChild(document.getElementsByTagName("template")[0].content.cloneNode(true));
         }
         </script>
