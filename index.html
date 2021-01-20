@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        CSE 110 Lab 2 Roger Ji
+    </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSE 110 Lab 2 Roger Ji">
+    <meta name="keywords" content="CSE 110 Lab 2 Roger Ji">
+    <meta name="author" content="Roger Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    nav {
+        line-height: 5em;
+    }
+</style>
+<body>
+    <header class ="myheaderclass">
+        Roger Ji's CSE 110 Lab 2 :D, This is my header element at the top. Below is the navigation
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">A dummy link</a></li>
+                <li><a href="#">Another dummy link</a></li>
+                <li><a href="https://google.com" target = "_blank">Google!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h1><strong id ="mystrongid">Main content y'all h1 size and strong</strong></h1>
+        Below me is an empty canvas which I don't know how to draw on with javascript
+        <br>
+        <p> hiiiii </p>
+        <canvas width="300" height="100" style="border:1px solid black">
+        </canvas>
+
+        <br>
+        Below is my attempt at using svg to draw something:
+        <br>
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="50" stroke="red" stroke-width="1" fill="blue" />
+        </svg>
+    </main>
+    <br>
+    Below is an example of me using the picture tag:
+    <br>
+    <picture class="mypictureclass" style="margin:auto">
+        <source media="(min-width:720px)" srcset="roger_ji_2.JPG">
+        <img src="roger_ji_2.JPG" alt="me" height="200" width="200">
+    </picture>
+
+    <h2> This is some h2 size content</h2>
+    <br>
+    <h3> This is some h3 size content </h3>
+    <hr>
+    <section>
+
+        <h2>Section 1</h2>
+        My favorite cat video:
+        <br>
+        <video src="cat.mp4" controls></video>
+        <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae luctus neque.
+        <aside style="padding-left:20px">
+            <span style="background-color:lightgray"> Just some <b>random</b> filler text that uses the aside tag
+                :)</span>
+        </aside>
+        Aliquam ornare interdum lacus vitae maximus. Donec imperdiet sed nisi quis egestas. Aenean id purus cursus,
+        porttitor odio.
+        <br>
+        <hr>
+        My attempt at making a form:
+
+        <form action="#">
+            <input type="submit" value="Submit">
+
+            <fieldset>
+                <legend>Enter ur information:</legend>
+                <label for="name">Full name:</label>
+                <input type="text" id="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"><br><br>
+
+                <label for="number">fav number:</label>
+                <input type="number" id="number"><br><br>
+
+                <label for="numbers">Choose ur favorite funny number</label>
+                <select name="numbers" id="numbers">
+                <optgroup label="funny numbers">
+                    <option value="69">69</option>
+                    <option value="420">420</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="666">666</option>
+                    <option value="idk">idk something else</option>
+                </optgroup>
+                </select><br><br>
+
+                <label for="url">fav url:</label>
+                <input type="url" id="url"><br><br>
+
+                <label for="file">fav file:</label>
+                <input type="file" id="file"><br><br>
+
+                <label for="color">fav color:</label>
+                <input type="color" id="color"><br><br>
+
+                <label for="password">ur ssn:</label>
+                <input type="password" id="password"><br><br>
+
+                <label for="time">fav time of day:</label>
+                <input type="time" id="time"><br><br>
+
+                <label for="month">fav month:</label>
+                <input type="month" id="month"><br><br>
+
+                <label for="age">Choose your age range</label>
+                    <input list="ages" name="age" id="age">
+
+                    <datalist id="ages">
+                    <option value="0-20">
+                    <option value="21-40">
+                    <option value="41-60">
+                    <option value="61-80">
+                    <option value="80+">
+                    </datalist>
+                <br><br>
+                <label for="other">Please enter ur other info:</label>
+                <textarea id="other" name="other" rows="3" cols="40">
+                </textarea>
+               </fieldset>
+
+               <input type="submit" value="Submit">
+        </form>
+        
+    </section>
+    <hr>
+    <section>
+        <h2>Section 2 </h2>
+        <figure>
+            <img src="Roger_Ji.png" alt="Roger headshot" style="width:10%">
+            <figcaption>That's me</figcaption>
+        </figure>
+        <div>
+            This is my new div
+            Some <i>random</i> things about me:
+            <ol>
+                <li>
+                    I have 3 pets (2 dogs and a cat)
+                </li>
+                <li>
+                    I'm from the <em>Bay Area</em>
+                </li>
+                <li>
+                    I can speak 3 languages
+                </li>
+                <li>
+                    My favorite piece of code is <code> rm -rf / </code>
+                </li>
+                <li>
+                    My favorite HTML tag is the <code> pre </code> tag:
+                    <pre>
+                            wooo        loook its preformatted           !!!!!!
+
+
+                            mag      ic
+                        </pre>
+                </li>
+                <li>
+                    I have another site you can peek here:
+                    <br>
+                    <iframe src="https://rogerji.me" title="other website" height="500" width="500"></iframe>
+                </li>
+                <li>
+                    My favorite piece of classical music is Serenade by Schubert:
+                    <br>
+                    <audio controls>
+                        <source src="serenade.mp3" type="audio/mp3">
+                        Oops pls have mp3 kthx
+                    </audio>
+                </li>
+            </ol>
+
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3> Below you can find all the classes I've taken so far</h3>
+            <table>
+                <caption> Coursework so far</caption>
+                <colgroup>
+                    <col span="1" style="background-color:lightgreen">
+                    <col style="background-color:lightpink">
+                </colgroup>
+                <tr>
+                    <th>Quarter</th>
+                    <th>Classes</th>
+                </tr>
+                <tr>
+                    <td>Winter 2021</td>
+                    <td>CSE 110, Math 183, CSE 132A</td>
+                </tr>
+                <tr>
+                    <td>Fall 2020</td>
+                    <td>CSE 100, MGT 166, MGT 172, POLI 113A</td>
+                </tr>
+                <tr>
+                    <td>SS2 2020</td>
+                    <td>CSE 141, CSE 141L, ANSC 166, CSE 197</td>
+                </tr>
+                <tr>
+                    <td>SS1 2020</td>
+                    <td>CSE 140, CSE 140L, MATH 18</td>
+                </tr>
+                <tr>
+                    <td>Spring 2020</td>
+                    <td>CSE 30, CSE 105, DOC 3, MATH 20C, CSE 198</td>
+                </tr>
+                <tr>
+                    <td>Winter 2020</td>
+                    <td>CSE 21, CSE 12, CSE 15L, CSE 198, DOC 2</td>
+                </tr>
+                <tr>
+                    <td>Fall 2019</td>
+                    <td>CSE 11, CSE 20, DOC 1, MUS 4</td>
+                </tr>
+            </table>
+            <details>
+                <summary>My class plans for Spring 2021</summary>
+                    <p>CSE 132B, CSE 101, CSE 135, CSE 152A</p>
+                    <p id="fa2021"></p>
+                    <button type="button" onclick="showTemplate()">Click Me to see plans for Fall 2021!</button>
+                    <template>
+                        <p>Fall 2021: CSE 120, CSE 107</p>
+                    </template>
+              </details>
+        </div>
+    </section>
+
+    <footer style="margin-bottom:0px">
+        <p>Reach my email at <a href="mailto:roji@ucsd.edu">roji@ucsd.edu</a></p>
+    </footer>
+
+    <script>
+        function showTemplate() {
+          document.getElementById("fa2021").appendChild(document.getElementsByTagName("template")[0].content.cloneNode(true));
+        }
+        </script>
+</body>
+
+</html>
