@@ -110,4 +110,26 @@ picture.mypictureclass {
     body {
       background-color: black;
     }
-  }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-grow: 1;
+    align-items: center;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 50px 50px auto;
+    grid-template-rows: 50% 50%;
+    row-gap: 30px;
+}
+
+.item-grid {
+    justify-self: auto;
+}
