@@ -1,0 +1,113 @@
+/* class selector */
+.myheaderclass {
+    background-color: rgb(100,100,100);
+    color: rgba(120, 0, 0, 0.5);
+}
+
+/* id selector */
+#mystrongid {
+    background-color: #ABCDEF;
+    color: #1FE;
+}
+
+/* universal selector */
+* {
+    font-family: Fraunces;
+    max-width: 100%;
+}
+
+/* element selector */
+a {
+    color: skyblue;
+    font-size: 3rem;
+}
+
+div {
+    border-style: 1px solid black;
+    background-color: hsl(360, 80%, 50%);
+    color: hsla(360, 100%, 100%, 1);
+}
+
+p {
+    border-style: solid;
+    border-color: yellow;
+    border-width: medium medium medium medium;
+    border-radius: 25px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1cm;
+}
+
+header {
+    display: block;
+}
+
+footer {
+    display: inline-block;
+    position: sticky;
+}
+
+/* attribute selector */
+a[target="_blank"] {
+    font-size: 10mm;
+    line-height: 2ch;
+}
+
+/* pseudoclass selector */
+a:hover {
+    color: red;
+}
+
+p:active {
+    color: purple;
+}
+
+/* selector list */
+ul, li {
+    color: green;
+}
+
+/* descendant combo */
+section h2 {
+    color: magenta;
+}
+
+/* child combo */
+section > aside {
+    color: teal;
+}
+
+/* general sibling combo */
+picture + h2 {
+    text-decoration: line-through;
+}
+
+/* adjacent sibling combo */
+h3 ~ table {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    height:50vh;
+}
+
+/* combining two selectors */
+picture.mypictureclass {
+    margin-top: 500px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    width: 20vw;
+    background-color: gray;
+}
+
+@media (max-width: 720px) {
+    body {
+      background-color: black;
+    }
+  }
